@@ -3,7 +3,7 @@
  * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
  *******************************************************/
 configuration {
-    font:            "Noto Sans Regular 10";
+    font:            "JetBrains Mono Nerd Font 10";
     show-icons:      false;
     icon-theme:      "Qogir";
     scroll-method:   0;
@@ -20,7 +20,7 @@ window {
     padding:          10;
     transparency:     "real";
     width:            120px;
-    location:         east;
+    location:         northeast;
     /*y-offset:       18;*/
     /*x-offset:       850;*/
 }
@@ -31,7 +31,7 @@ listview {
 }
 element {
     border:  0;
-    padding: 1px;
+    padding: 0px 5px;
 }
 element-text {
     background-color: inherit;
