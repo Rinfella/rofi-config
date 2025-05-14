@@ -9,7 +9,6 @@ configuration {
     scroll-method:    0;
     disable-history:  false;
     fullscreen:       false;
-    hide-scrollbar:   true;
     sidebar-mode:     false;
 }
 
@@ -24,8 +23,8 @@ window {
     transparency:     "real";
     width:            170px;
     location:         northeast;
-    /*y-offset:       18;*/
-    /*x-offset:       850;*/
+    y-offset:         38;
+    x-offset:         -14;
 }
 listview {
     lines:   4;
