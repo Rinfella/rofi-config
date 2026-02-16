@@ -7,6 +7,9 @@ configuration {
     scroll-method:    0;
     disable-history:  false;
     sidebar-mode:     false;
+    hover-select:     true;
+    me-select-entry:  "";
+    me-accept-entry:  "MousePrimary";
 }
 
 @import "~/.config/rofi/config.rasi"
@@ -14,18 +17,24 @@ configuration {
 window {
     background-color: @background;
     border:           0;
-    padding:          10;
+    padding:          5;
     transparency:     "real";
-    width:            220px;       /* Compact width */
+
+    width:            env(ROFI_WIDHT, 200px);
+
     location:         northeast;   /* Top Right */
     y-offset:         38;
     x-offset:         -14;
+
+    children:         [ listview ];
 }
 
 listview {
-    lines:            6;
+    lines:            env(ROFI_LINES, 10);
     columns:          1;
     scrollbar:        false;      /* Hidden Scrollbar */
+    spacing:          0;
+    padding:          5px 0;
 }
 
 /* HIDES THE SEARCH BAR AND CURSOR */
@@ -42,6 +51,7 @@ element-text {
     background-color: inherit;
     text-color:       inherit;
     horizontal-align: 0.0;        /* Left align text */
+    vertical-align:   0.5;        /* Center vertically */
 }
 
 /* Colors from your main config */
